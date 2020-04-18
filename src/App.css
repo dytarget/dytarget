@@ -2,16 +2,18 @@
   width: 100vw;height: 100vh;
   background-size: contain;
   background-repeat: no-repeat;
+  margin: 0;
+  padding: 0px;
   will-change: transform, opacity, left, top, right, width, height;
 }
 
 
 #elem1{
   background-image: url('./img/background.png');
-  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-position: center;
   align-items: center;
 }
 
@@ -313,7 +315,6 @@
   width: 70px;
   position: absolute;
   will-change: transform, opacity, left, top, right, width, height;
-
 }
 
 #moving-3 img{

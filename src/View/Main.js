@@ -67,7 +67,7 @@ export class Main extends Component {
                                     {(state) => {
                                         const { x,y } = state
                                         return (
-                                    <div style={{backgroundPosition:`calc(5vw + ${x/50}px) ${y/50}px`}} id="elem1" className="page">
+                                    <div style={{backgroundPosition:`calc(45% + ${x/50}px) ${y/50}px`}} id="elem1" className="page">
                                         <CSSTransition in={which===1} timeout={5500}  classNames="slogan1"  unmountOnExit><h2 id="slogan1" className="slogan">Define</h2></CSSTransition>
                                         <CSSTransition in={which===1} timeout={5500}  classNames="slogan2"  unmountOnExit><h2 id="slogan2" className="slogan">Your</h2></CSSTransition>
                                         <CSSTransition in={which===1} timeout={5500}  classNames="slogan3"  unmountOnExit><h2 id="slogan3" className="slogan">Target</h2></CSSTransition>
@@ -151,7 +151,7 @@ export class Main extends Component {
                             update={() => ({
                                 x: this.state.diffX,
                                 y: this.state.diffY,   
-                                timing: { duration:10, ease: easeExpOut },
+                                timing: { duration:1, ease: easeExpOut },
                             })}
                           >
                                 {(state) => {
